@@ -5,7 +5,7 @@ import {useNavigate} from 'react-router-dom';
 function Hero() {
     const navigate = useNavigate();
     const handleClick = () => {
-        navigate('/about')
+        navigate('/contact')
     }
     return (
         <>

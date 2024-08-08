@@ -7,7 +7,7 @@ import {useNavigate} from 'react-router-dom';
 function Purchase() {
     const navigate = useNavigate();
     const handleClick = () => {
-        navigate('/about')
+        navigate('/contact')
     }
     return (
         <>

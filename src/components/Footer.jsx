@@ -13,7 +13,7 @@ function Footer() {
                         <a href="/" className="link link-hover">Home</a>
                         <a href="/contact" className="link link-hover">Contact</a>
                         <a href="/about" className="link link-hover">About</a>
-                        <a href="/service" className="link link-hover" onClick={() => { scrollbar('service') }}>Service</a>
+                        <a className="link link-hover" onClick={() => { scrollbar('service') }}>Service</a>
                     </nav>
                     <nav>
                         <div className="grid grid-flow-col gap-4">

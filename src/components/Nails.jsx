@@ -2,8 +2,13 @@ import React from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import Nail from '../../src/assests/Nail.png';
+import {useNavigate} from 'react-router-dom';
 
 function Nails() {
+    const navigate = useNavigate();
+    const handleClick = () => {
+        navigate('/contact')
+    }
     return (
         <>
             <Navbar />
@@ -45,7 +50,7 @@ function Nails() {
                             <h2 className='text-slate-400 text-xl line-through'>₹ 1000</h2>
                             <h3 className='text-green-700 text-xs font-bold'>40% Off</h3>
                         </div>
-                        <button className='btn btn-outline rounded-full'>Book an Appointment</button>
+                        <button className='btn btn-outline rounded-full' onClick={handleClick}>Book an Appointment</button>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import logo from '../../src/assests/logo.svg';
+import logo from '../../src/assests/nailprobg.png';
+import {useNavigate} from 'react-router-dom';
 
 function Navbar() {
     const [sticky, setSticky] = useState(false);
@@ -20,6 +21,11 @@ function Navbar() {
     const scrollbar = (e) => {
         document.getElementById(e).scrollIntoView({ behavior: 'smooth' });
     }
+    const navigate = useNavigate();
+    const handleClick = () => {
+        navigate('/about')
+    }
+    
     return (
         <>
             <div className={`max-w-screen-2xl container mx-auto md:px-20 px-4 ${sticky ?
@@ -68,7 +74,7 @@ function Navbar() {
                         </ul>
                     </div>
                     <div className="navbar-end">
-                        <a className="btn btn-outline outline-indigo-500 rounded-full">Login</a>
+                        <a className="btn btn-outline outline-indigo-500 rounded-full" onClick={handleClick}>Visit to Store</a>
                     </div>
                 </div>
             </div>

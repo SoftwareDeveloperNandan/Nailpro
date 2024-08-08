@@ -7,7 +7,7 @@ import {useNavigate} from 'react-router-dom';
 function Manicure() {
     const navigate = useNavigate();
     const handleClick = () => {
-        navigate('/about')
+        navigate('/contact')
     }
     return (
         <>

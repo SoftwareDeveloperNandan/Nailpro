@@ -2,9 +2,13 @@ import React from 'react'
 import Navbar from './Navbar';
 import Footer from './Footer';
 import Eylesh from '../../src/assests/Eylesh-lifting.png';
+import {useNavigate} from 'react-router-dom';
 
 function Eyelash() {
-    
+    const navigate = useNavigate();
+    const handleClick = () => {
+        navigate('/contact')
+    }
     return (
         <>
             <Navbar />
@@ -46,7 +50,7 @@ function Eyelash() {
                             <h2 className='text-slate-400 text-xl line-through'>₹ 3000</h2>
                             <h3 className='text-green-700 text-xs font-bold'>50% Off</h3>
                         </div>
-                        <button className='btn btn-outline rounded-full'>Book an Appointment</button>
+                        <button className='btn btn-outline rounded-full' onClick={handleClick}>Book an Appointment</button>
                     </div>
                 </div>
             </div>
