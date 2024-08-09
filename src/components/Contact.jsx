@@ -156,7 +156,7 @@ function Contact() {
                                         </svg>
                                         <input
                                             {...register("Phone", { required: true })}
-                                            type="text"
+                                            type="number"
                                             id='Phone'
                                             name='Phone'
                                             className="grow"
