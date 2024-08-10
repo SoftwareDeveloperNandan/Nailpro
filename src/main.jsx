@@ -6,6 +6,8 @@ import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
+    <div className='bg-white text-black dark:bg-inherit dark:text-white'>
     <App />
-  </BrowserRouter>,
+    </div>
+  </BrowserRouter>
 )

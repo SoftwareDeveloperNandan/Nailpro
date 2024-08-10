@@ -46,8 +46,8 @@ function Purchase() {
                         </div>
 
                         <div className='w-full flex items-center gap-3 my-3'>
-                            <h1 className='text-2xl font-bold'>₹ 560</h1>
-                            <h2 className='text-slate-400 text-xl line-through'>₹ 800</h2>
+                            <h1 className='text-2xl font-bold'>₹ 800</h1>
+                            <h2 className='text-slate-400 text-xl line-through'>₹ 1,040</h2>
                             <h3 className='text-green-700 text-xs font-bold'>30% Off</h3>
                         </div>
                         <button className='btn btn-outline rounded-full' onClick={handleClick}>Book an Appointment</button>

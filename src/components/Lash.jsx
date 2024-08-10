@@ -46,9 +46,9 @@ function Lash() {
                         </div>
 
                         <div className='w-full flex items-center gap-3 my-3'>
-                            <h1 className='text-2xl font-bold'>₹ 900</h1>
-                            <h2 className='text-slate-400 text-xl line-through'>₹ 1500</h2>
-                            <h3 className='text-green-700 text-xs font-bold'>40% Off</h3>
+                            <h1 className='text-2xl font-bold'>₹ 1,500</h1>
+                            <h2 className='text-slate-400 text-xl line-through'>₹ 1950</h2>
+                            <h3 className='text-green-700 text-xs font-bold'>30% Off</h3>
                         </div>
                         <button className='btn btn-outline rounded-full' onClick={handleClick}>Book an Appointment</button>
                     </div>

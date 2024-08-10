@@ -7,7 +7,7 @@ import Nails from '../../src/assests/Nail.png';
 import Borowtinting from '../../src/assests/BorowLinting.png';
 import Lashtingting from '../../src/assests/LashLintings.png';
 import Tatto from '../../src/assests/Tatto.png';
-import {useNavigate} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 function Card() {
     const navigate = useNavigate();
@@ -17,10 +17,10 @@ function Card() {
     const handleMenicure = () => {
         navigate('/menicure')
     }
-    const handleEyeles =() => {
+    const handleEyeles = () => {
         navigate('/eyelash')
     }
-    const handleMicroblading =() => {
+    const handleMicroblading = () => {
         navigate('/microblading')
     }
     const handleNails = () => {
@@ -39,14 +39,17 @@ function Card() {
     }
     return (
         <>
-            <div className='max-w-screen-2xl container mx-auto md:px-20 px-4' id='service'>
+            <div className='max-w-screen-2xl container mx-auto md:px-20 px-4 bg-white text-black dark:bg-inherit dark:text-white' id='service'>
 
                 <div className='mt-10 mb-10 text-center items-center '>
-                    <h2 className='text-3xl font-bold'>Our <span className='text-red-600'>Services</span></h2>
+                    <h2 className='text-3xl font-bold'>Our <span className='text-red-600'>Premium Services</span></h2>
                 </div>
-
-                <div className='grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
-                    <div className="card bg-base-100 w-full shadow-xl transform transition-transform duration-300 hover:scale-95 cursor-pointer" onClick={handleClick}>
+                {/* Alert message */}
+                <div>
+                    <h1 className='text-center font-bold text-xs text-gray-600'>Enjoy 30% off on all premium services. Offer starts now!</h1>
+                </div>
+                <div className='grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 '>
+                    <div className="card w-full shadow-xl transform transition-transform duration-300 hover:scale-95 cursor-pointer bg-white text-black dark:bg-inherit dark:text-white" onClick={handleClick}>
                         <figure className="px-3 pt-4 overflow-hidden">
                             <img
                                 src={Pedicure}
@@ -55,15 +58,14 @@ function Card() {
                         </figure>
                         <div className="card-body">
                             <h2 className="card-title">Pedicure
-                            <div className="badge badge-secondary">30% off</div>
                             </h2>
                             <p className='text-sm'>
-                                A pedicure enhances relaxation, promotes foot health, and 
+                                A pedicure enhances relaxation, promotes foot health, and
                                 leaves feet looking rejuvenated, boosting confidence and overall well-being.</p>
                         </div>
                     </div>
 
-                    <div className="card bg-base-100 w-full shadow-xl transform transition-transform duration-300 hover:scale-95 cursor-pointer" onClick={handleMenicure}>
+                    <div className="card w-full shadow-xl transform transition-transform duration-300 hover:scale-95 cursor-pointer bg-white text-black dark:bg-inherit dark:text-white" onClick={handleMenicure}>
                         <figure className="px-3 pt-4 overflow-hidden">
                             <img
                                 src={Menicure}
@@ -76,7 +78,7 @@ function Card() {
                         </div>
                     </div>
 
-                    <div className="card bg-base-100 w-full shadow-xl transform transition-transform duration-300 hover:scale-95 cursor-pointer" onClick={handleEyeles}>
+                    <div className="card w-full shadow-xl transform transition-transform duration-300 hover:scale-95 cursor-pointer bg-white text-black dark:bg-inherit dark:text-white" onClick={handleEyeles}>
                         <figure className="px-3 pt-4 overflow-hidden">
                             <img
                                 src={Eylesh}
@@ -90,7 +92,7 @@ function Card() {
                     </div>
 
 
-                    <div className="card bg-base-100 w-full shadow-xl transform transition-transform duration-300 hover:scale-95 cursor-pointer" onClick={handleMicroblading}>
+                    <div className="card w-full shadow-xl transform transition-transform duration-300 hover:scale-95 cursor-pointer bg-white text-black dark:bg-inherit dark:text-white" onClick={handleMicroblading}>
                         <figure className="px-3 pt-4 overflow-hidden">
                             <img
                                 src={Microblading}
@@ -104,7 +106,7 @@ function Card() {
                         </div>
                     </div>
 
-                    <div className="card bg-base-100 w-full shadow-xl transform transition-transform duration-300 hover:scale-95 cursor-pointer" onClick={handleBorow}>
+                    <div className="card w-full shadow-xl transform transition-transform duration-300 hover:scale-95 cursor-pointer bg-white text-black dark:bg-inherit dark:text-white" onClick={handleBorow}>
                         <figure className="px-3 pt-4 overflow-hidden">
                             <img
                                 src={Borowtinting}
@@ -116,8 +118,8 @@ function Card() {
                             <p className='text-sm'>Brow tinting enhances brow color and definition, providing a fuller, natural look that frames the face beautifully and simplifies grooming.</p>
                         </div>
                     </div>
-                    
-                    <div className="card bg-base-100 w-full shadow-xl transform transition-transform duration-300 hover:scale-95 cursor-pointer" onClick={handleNails}>
+
+                    <div className="card w-full shadow-xl transform transition-transform duration-300 hover:scale-95 cursor-pointer bg-white text-black dark:bg-inherit dark:text-white" onClick={handleNails}>
                         <figure className="px-3 pt-4 overflow-hidden">
                             <img
                                 src={Nails}
@@ -130,7 +132,7 @@ function Card() {
                         </div>
                     </div>
 
-                    <div className="card bg-base-100 w-full shadow-xl transform transition-transform duration-300 hover:scale-95 cursor-pointer" onClick={handleLash}>
+                    <div className="card w-full shadow-xl transform transition-transform duration-300 hover:scale-95 cursor-pointer bg-white text-black dark:bg-inherit dark:text-white" onClick={handleLash}>
                         <figure className="px-3 pt-4 overflow-hidden" >
                             <img
                                 src={Lashtingting}
@@ -143,7 +145,7 @@ function Card() {
                         </div>
                     </div>
 
-                    <div className="card bg-base-100 w-full shadow-xl transform transition-transform duration-300 hover:scale-95 cursor-pointer" onClick={hadleTatto}>
+                    <div className="card w-full shadow-xl transform transition-transform duration-300 hover:scale-95 cursor-pointer bg-white text-black dark:bg-inherit dark:text-white" onClick={hadleTatto}>
                         <figure className="px-3 pt-4 overflow-hidden">
                             <img
                                 src={Tatto}

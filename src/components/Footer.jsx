@@ -10,7 +10,7 @@ function Footer() {
 
     return (
         <>
-            <div className='max-w-screen-2xl container mx-auto md:px-20 px-4 mt-10'>
+            <div className='max-w-screen-2xl container mx-auto md:px-20 px-4 mt-10 bg-white text-black dark:bg-inherit dark:text-white'>
                 <footer className="footer footer-center text-base-content rounded p-10">
                     <nav className="grid grid-flow-col gap-4">
                         <a href="/" className="link link-hover">Home</a>
@@ -20,13 +20,13 @@ function Footer() {
                     </nav>
                     <nav>
                         <div className="grid grid-flow-col gap-4">
-                            <a>
+                            <a href='https://www.instagram.com/nailproindia/'>
                                 <img src={instagram} alt="instagram" className='h-8 w-8 cursor-pointer'/>
                             </a>
                             <a>
                                 <img src={youtube} alt="youtube" className='h-8 w-8 cursor-pointer' />
                             </a>
-                            <a>
+                            <a href='https://www.facebook.com/nailproindia/'>
                                 <img src={facebook} alt="facebook icon" className='h-8 w-8 cursor-pointer' />
                             </a>
                             

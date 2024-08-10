@@ -22,11 +22,11 @@ function Contact() {
             console.log(contactInfo);
             const dataSubmited = await axios.post("https://getform.io/f/awngrkkb", contactInfo);
             toast.success("Your Appointment is successfully submitted.");
-            if(dataSubmited) {
+            if (dataSubmited) {
                 setTimeout(() => {
-                location.reload();
+                    location.reload();
                 }, 1000);
-            }else{
+            } else {
                 toast.error("Your data has been submiteed...");
             }
         } catch (error) {
@@ -47,7 +47,7 @@ function Contact() {
                             <p className="py-6 text-sm">
                                 Contact us today to schedule your nail appointment! Call or email, and we'll be happy to assist with your booking.
                             </p>
-                            {/* contact info */}
+                            {/* contact info icon*/}
                             <div className="flex items-center gap-2 mb-4">
 
                                 <svg
@@ -60,7 +60,7 @@ function Contact() {
                                 <p><span className='text-sm font-bold'>022 65075884</span> or <span className='text-sm font-bold'>9076064427</span></p>
 
                             </div>
-                            {/* email */}
+                            {/* email icon*/}
                             <div className="flex items-center gap-2 mb-4">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +75,7 @@ function Contact() {
                                 <p className='text-sm'>nailpronbl@gmail.com</p>
 
                             </div>
-                            {/* location */}
+                            {/* location icon*/}
                             <div className="flex items-center gap-2 mb-4">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -90,107 +90,99 @@ function Contact() {
 
                         </div>
 
-                        <div className="w-full bg-gray-100 p-6 shadow-sm rounded-md">
+                        {/* Contact Us Form Start */}
+                        <div className="w-full bg-slate-100 text-black dark:bg-inherit dark:text-white p-6 shadow-sm rounded-md">
                             <form onSubmit={handleSubmit(onSubmit)}>
 
                                 {/* Username */}
-                                <div>
-                                    <label className="input flex items-center gap-2 mb-4">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 16 16"
-                                            fill="currentColor"
-                                            className="h-4 w-4 opacity-70">
-                                            <path
-                                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" />
-                                        </svg>
-                                        <input
-                                            {...register("Username", { required: true })}
-                                            type="text"
-                                            id='Username'
-                                            name='Username'
-                                            className="grow"
-                                            placeholder="Username"
-                                            autoComplete='off'
-                                        />
-
-                                    </label>
-                                    {errors.Username && <span className='text-red-600 text-xs'>This field is required</span>}
+                                <div className="relative flex items-center mb-4">
+                                    <input
+                                        {...register("Username", { required: true })}
+                                        type="text"
+                                        id="Username"
+                                        name="Username"
+                                        className="w-full border border-gray-300 rounded-md pl-10 pr-3 py-2 bg-white text-black dark:bg-black dark:text-white"
+                                        placeholder="Username"
+                                        autoComplete="off"
+                                    />
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 16 16"
+                                        fill="currentColor"
+                                        className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-500 dark:text-gray-400">
+                                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" />
+                                    </svg>
                                 </div>
+                                {errors.Username && <span className="text-red-600 text-xs">This field is required</span>}
+
                                 {/* Email */}
-                                <div>
-                                    <label className="input flex items-center gap-2 mb-4">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 16 16"
-                                            fill="currentColor"
-                                            className="h-4 w-4 opacity-70">
-                                            <path
-                                                d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
-                                            <path
-                                                d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
-                                        </svg>
-                                        <input
-                                            {...register("Email", { required: true })}
-                                            type="email"
-                                            id='Email'
-                                            name='Email'
-                                            className="grow"
-                                            placeholder="Email"
-                                            autoComplete='off'
-                                        />
-
-                                    </label>
-                                    {errors.Email && <span className='text-red-600 text-xs'>This field is required</span>}
+                                <div className="relative flex items-center mb-4">
+                                    <input
+                                        {...register("Email", { required: true })}
+                                        type="email"
+                                        id="Email"
+                                        name="Email"
+                                        className="w-full border border-gray-300 rounded-md pl-10 pr-3 py-2 bg-white text-black dark:bg-black dark:text-white"
+                                        placeholder="Email"
+                                        autoComplete="off"
+                                    />
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 16 16"
+                                        fill="currentColor"
+                                        className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-500 dark:text-gray-400">
+                                        <path d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
+                                        <path d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
+                                    </svg>
                                 </div>
+                                {errors.Email && <span className="text-red-600 text-xs">This field is required</span>}
 
                                 {/* Mobile */}
-                                <div>
-                                    <label className="input flex items-center gap-2 mb-4">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 16 16"
-                                            fill="currentColor"
-                                            className="h-4 w-4 opacity-70">
-                                            <path d="M3.654 1.328a1 1 0 0 1 .995.95l.25 3a1 1 0 0 1-.57.944l-1.7.85a13.017 13.017 0 0 0 5.154 5.154l.85-1.7a1 1 0 0 1 .944-.57l3 .25a1 1 0 0 1 .95.995v2.507a1 1 0 0 1-1.106.993C6.383 14.813 1.188 9.617.013 3.76A1 1 0 0 1 1.006 2.655h2.507z" />
-                                        </svg>
-                                        <input
-                                            {...register("Phone", { required: true })}
-                                            type="number"
-                                            id='Phone'
-                                            name='Phone'
-                                            className="grow"
-                                            placeholder="Phone"
-                                            autoComplete='off'
-                                        />
-
-                                    </label>
-                                    {errors.Phone && <span className='text-red-600 text-xs'>This field is required</span>}
+                                <div className="relative flex items-center mb-4">
+                                    <input
+                                        {...register("Phone", { required: true })}
+                                        type="number"
+                                        id="Phone"
+                                        name="Phone"
+                                        className="w-full border border-gray-300 rounded-md pl-10 pr-3 py-2 bg-white text-black dark:bg-black dark:text-white"
+                                        placeholder="Phone"
+                                        autoComplete="off"
+                                    />
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 16 16"
+                                        fill="currentColor"
+                                        className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-500 dark:text-gray-400">
+                                        <path d="M3.654 1.328a1 1 0 0 1 .995.95l.25 3a1 1 0 0 1-.57.944l-1.7.85a13.017 13.017 0 0 0 5.154 5.154l.85-1.7a1 1 0 0 1 .944-.57l3 .25a1 1 0 0 1 .95.995v2.507a1 1 0 0 1-1.106.993C6.383 14.813 1.188 9.617.013 3.76A1 1 0 0 1 1.006 2.655h2.507z" />
+                                    </svg>
                                 </div>
+                                {errors.Phone && <span className="text-red-600 text-xs">This field is required</span>}
 
                                 {/* Message */}
-                                <div>
-                                    <label for="message" className="block text-md font-medium text-gray-500 mb-4">How can we serve you?</label>
+                                <div className="mb-4">
+                                    <label htmlFor="message" className="block text-md font-medium text-gray-500 dark:text-gray-400 mb-2">How can we serve you?</label>
                                     <textarea
                                         {...register("message", { required: true })}
                                         id="message"
                                         name="message"
                                         rows="3"
-                                        className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
-                                        autoComplete='off'
+                                        className="w-full border border-gray-300 rounded-md p-2 bg-white text-black dark:bg-black dark:text-white"
+                                        placeholder="Your message"
+                                        autoComplete="off"
                                     ></textarea>
-                                    {errors.message && <span className='text-red-600 text-xs'>This field is required</span>}
                                 </div>
+                                {errors.message && <span className="text-red-600 text-xs">This field is required</span>}
 
-                                {/* Submit form */}
+                                {/* Submit Button */}
                                 <div className="form-control mt-4">
-                                    <button className='btn btn-primary' disabled={isSubmitting}>
+                                    <button className="btn btn-primary w-full py-2 px-4 rounded-md" disabled={isSubmitting}>
                                         {isSubmitting ? "Submitting..." : "Book an Appointment"}
                                     </button>
-
                                 </div>
                             </form>
                         </div>
+
+
                     </div>
                 </div>
             </div>
