@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Pedicure from '../../src/assests/Pedicure.png';
+import Anjali from '../../src/assests/testimonials/Anjali-Ancchan.png';
+import Heli from '../../src/assests/testimonials/Heli-vyash.png';
+import Rajni from '../../src/assests/testimonials/Rajni-chattaraj.png';
+import Shona from '../../src/assests/testimonials/Shona-Graham.png';
 
 function Testimonials() {
     var settings = {
@@ -39,103 +42,82 @@ function Testimonials() {
             }
         ]
     }
+
     return (
         <>
             <div className='max-w-screen-2xl container mx-auto md:px-20 px-4 mt-10'>
-                <div className='mt-10 mb-10 text-center items-center '>
+                <div className='mt-10 mb-10 text-center items-center'>
                     <h2 className='text-3xl font-bold'>Our <span className='text-red-600'>Testimonials</span></h2>
                 </div>
                 <Slider {...settings}>
-
-                    <div className="card bg-base-100 w-full shadow-xl transform transition-transform duration-300 hover:scale-95 cursor-pointer card-container">
-
-                        <div className="avatar flex justify-center mt-3">
-                            <div className="w-36 rounded-full shadow-2xl">
-                                <img src={Pedicure} />
+                    <div className='flex flex-col px-2'>
+                        <div className="card bg-base-100 w-full shadow-xl transform transition-transform duration-300 hover:scale-95 cursor-pointer">
+                            <div className="avatar flex justify-center mt-3">
+                                <div className="w-36 rounded-full shadow-2xl">
+                                    <img src={Anjali} alt="Anjali Anchan" />
+                                </div>
                             </div>
-                        </div>
-                        <div className="card-body">
-                            <h2 className="text-xl font-bold text-center">Pedicure</h2>
-                            <p className='text-sm'>
-                                A pedicure enhances relaxation, promotes foot health, and leaves feet looking rejuvenated, boosting confidence and overall well-being.</p>
+                            <div className="card-body flex-grow h-full">
+                                <h2 className="text-xl font-bold text-center">Anjali Anchan</h2>
+                                <p className='text-sm'>
+                                    Great service with wonderful staff, especially <span className='text-sm font-bold'>Kalpana</span>. Experienced and attentive, she ensured I was happy with the eyelash services. This place offers true value for money, making it stand out above the rest.
+                                </p>
+                            </div>
                         </div>
                     </div>
 
-                    <div className="card bg-base-100 w-full shadow-xl transform transition-transform duration-300 hover:scale-95 cursor-pointer card-container">
-
-                        <div className="avatar flex justify-center mt-3">
-                            <div className="w-36 rounded-full shadow-2xl">
-                                <img src={Pedicure} />
+                    <div className='flex flex-col px-2'>
+                        <div className="card bg-base-100 w-full shadow-xl transform transition-transform duration-300 hover:scale-95 cursor-pointer p-3">
+                            <div className="avatar flex justify-center mt-3">
+                                <div className="w-36 rounded-full shadow-2xl">
+                                    <img src={Heli} alt="Heli Vyash" />
+                                </div>
                             </div>
-                        </div>
-                        <div className="card-body">
-                            <h2 className="text-xl font-bold text-center">Pedicure</h2>
-                            <p className='text-sm'>
-                                A pedicure enhances relaxation, promotes foot health, and leaves feet looking rejuvenated, boosting confidence and overall well-being.</p>
+                            <div className="card-body flex-grow h-full">
+                                <h2 className="text-xl font-bold text-center">Heli Vyash</h2>
+                                <p className='text-sm'>
+                                    Fabulous place ! Great staff .. kind warm and brilliant/ quick with their work
+                                    Great precision! Had such a wonderful time at Nail pro ! Highly recommended.
+                                </p>
+                            </div>
                         </div>
                     </div>
 
-                    <div className="card bg-base-100 w-full shadow-xl transform transition-transform duration-300 hover:scale-95 cursor-pointer card-container">
-
-                        <div className="avatar flex justify-center mt-3">
-                            <div className="w-36 rounded-full shadow-2xl">
-                                <img src={Pedicure} />
+                    <div className='flex flex-col px-2'>
+                        <div className="card bg-base-100 w-full shadow-xl transform transition-transform duration-300 hover:scale-95 cursor-pointer">
+                            <div className="avatar flex justify-center mt-3">
+                                <div className="w-36 rounded-full shadow-2xl">
+                                    <img src={Shona} alt="Shona Graham" />
+                                </div>
                             </div>
-                        </div>
-                        <div className="card-body">
-                            <h2 className="text-xl font-bold text-center">Pedicure</h2>
-                            <p className='text-sm'>
-                                A pedicure enhances relaxation, promotes foot health, and leaves feet looking rejuvenated, boosting confidence and overall well-being.</p>
+                            <div className="card-body flex-grow h-full">
+                                <h2 className="text-xl font-bold text-center">Shona Graham</h2>
+                                <p className='text-sm'>
+                                    Always visit Nail Pro in Mumbai for the BEST service—professional, thorough, and lovely staff. The acrylic nails are done quickly and beautifully. If you haven’t visited yet, I highly recommend them!
+                                </p>
+                            </div>
                         </div>
                     </div>
 
-                    <div className="card bg-base-100 w-full shadow-xl transform transition-transform duration-300 hover:scale-95 cursor-pointer card-container">
-
-                        <div className="avatar flex justify-center mt-3">
-                            <div className="w-36 rounded-full shadow-2xl">
-                                <img src={Pedicure} />
+                    <div className='flex flex-col px-2'>
+                        <div className="card bg-base-100 w-full shadow-xl transform transition-transform duration-300 hover:scale-95 cursor-pointer p-2">
+                            <div className="avatar flex justify-center mt-3">
+                                <div className="w-36 rounded-full shadow-2xl">
+                                    <img src={Rajni} alt="Rajni Chattaraj" />
+                                </div>
                             </div>
-                        </div>
-                        <div className="card-body">
-                            <h2 className="text-xl font-bold text-center">Pedicure</h2>
-                            <p className='text-sm'>
-                                A pedicure enhances relaxation, promotes foot health, and leaves feet looking rejuvenated, boosting confidence and overall well-being.</p>
+                            <div className="card-body flex-grow h-full">
+                                <h2 className="text-xl font-bold text-center">Rajni Chattaraj</h2>
+                                <p className='text-sm'>
+                                    Excellent service and skilled staff. Highly recommended for Nail art. Thanks to the Nail Pro team for making my birthday special with beautiful Nail extensions.
+                                </p>
+                            </div>
                         </div>
                     </div>
-
-                    <div className="card bg-base-100 w-full shadow-xl transform transition-transform duration-300 hover:scale-95 cursor-pointer card-container">
-
-                        <div className="avatar flex justify-center mt-3">
-                            <div className="w-36 rounded-full shadow-2xl">
-                                <img src={Pedicure} />
-                            </div>
-                        </div>
-                        <div className="card-body">
-                            <h2 className="text-xl font-bold text-center">Pedicure</h2>
-                            <p className='text-sm'>
-                                A pedicure enhances relaxation, promotes foot health, and leaves feet looking rejuvenated, boosting confidence and overall well-being.</p>
-                        </div>
-                    </div>
-
-                    <div className="card bg-base-100 w-full shadow-xl transform transition-transform duration-300 hover:scale-95 cursor-pointer card-container">
-
-                        <div className="avatar flex justify-center mt-3">
-                            <div className="w-36 rounded-full shadow-2xl">
-                                <img src={Pedicure} />
-                            </div>
-                        </div>
-                        <div className="card-body">
-                            <h2 className="text-xl font-bold text-center">Pedicure</h2>
-                            <p className='text-sm'>
-                                A pedicure enhances relaxation, promotes foot health, and leaves feet looking rejuvenated, boosting confidence and overall well-being.</p>
-                        </div>
-                    </div>                   
-
                 </Slider>
-
             </div>
         </>
-    )
+    );
 }
 
-export default Testimonials
+export default Testimonials;
