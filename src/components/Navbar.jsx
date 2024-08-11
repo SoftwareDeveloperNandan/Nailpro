@@ -24,9 +24,14 @@ function Navbar() {
     }
 
     const navigate = useNavigate();
-    const handleClick = () => {
+    const handleAbout = () => {
         navigate('/about')
     }
+
+    const handleContact = () => {
+        navigate('/contact')
+    }
+    
     // setBgcolor
     const [bgColor, setBgColor] = useState(
         localStorage.getItem("bgColor") ? localStorage.getItem("bgColor") : "light"
@@ -44,6 +49,8 @@ function Navbar() {
             document.body.classList.remove("dark");
         }
     }, [bgColor]);
+
+    
 
     return (
         <>
@@ -70,25 +77,25 @@ function Navbar() {
                                 tabIndex={0}
                                 className="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow  bg-white text-black dark:bg-black dark:text-white">
                                 <li><a href='/'>Home</a></li>
-                                <li><a href='/about'>About</a></li>
+                                <li><a onClick={ handleAbout}>About</a></li>
                                 <li><a onClick={() => scrollbar('service')}>Services</a></li>
-                                <li><a href='/contact'>Contact</a></li>
+                                <li><a onClick={ handleContact}>Contact</a></li>
                             </ul>
                         </div>
-                        <a href="/" className="h-auto w-28 dark:bg-slate-800">
+                        <a href="/" className="h-auto w-28">
                             <img src={logo} alt="nail-pro-logo" />
                         </a>
                     </div>
                     <div className="navbar-center hidden lg:flex">
                         <ul className="menu menu-horizontal px-1">
                             <li><a href='/' className='text-red-600 font-semibold'>Home</a></li>
-                            <li><a href='/contact'>Contact us</a></li>
+                            <li><a onClick={handleContact}>Contact us</a></li>
                             <li onClick={() => scrollbar('service')}><a>Service</a></li>
-                            <li><a href='/about'>About</a></li>
+                            <li><a onClick={ handleAbout}>About</a></li>
                         </ul>
                     </div>
                     <div className="navbar-end">
-                        <label className="swap swap-rotate mr-5">
+                        <label className="swap swap-rotate mr-2">
                             {/* this hidden checkbox controls the state */}
                             <input type="checkbox" className="theme-controller" value="synthwave" />
 
@@ -114,7 +121,7 @@ function Navbar() {
                                     d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
                             </svg>
                         </label>
-                        <a className="btn btn-outline outline-indigo-500 rounded-full" onClick={handleClick}>Visit to Store</a>
+                        <a className="btn btn-outline outline-indigo-500 rounded-full" onClick={handleContact}>Visit to Store</a>
                     </div>
                 </div>
             </div>

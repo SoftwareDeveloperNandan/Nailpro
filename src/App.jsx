@@ -19,16 +19,16 @@ function App() {
     <>
       <Routes>
         <Route path='/' element={<Home />}></Route>
-        <Route path='contact' element={<Contact />} />
-        <Route path='about' element={<About />} />
-        <Route path='pedicure' element={<Pedicure />} />
-        <Route path='menicure' element={<Menicure />} />
-        <Route path='eyelash' element={<Eyelash />} />
-        <Route path='microblading' element={<Microblading />} />
-        <Route path='nails' element={<Nails />} />
-        <Route path='borowlinting' element={<Borow />} />
-        <Route path='lashlinting' element={<Lash />} />
-        <Route path='tatto' element={<Tatto />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/pedicure' element={<Pedicure />} />
+        <Route path='/menicure' element={<Menicure />} />
+        <Route path='/eyelash' element={<Eyelash />} />
+        <Route path='/microblading' element={<Microblading />} />
+        <Route path='/nails' element={<Nails />} />
+        <Route path='/borowlinting' element={<Borow />} />
+        <Route path='/lashlinting' element={<Lash />} />
+        <Route path='/tatto' element={<Tatto />} />
       </Routes>
       <Toaster />
     </>

@@ -7,7 +7,7 @@ import Nails from '../../src/assests/Nail.png';
 import Borowtinting from '../../src/assests/BorowLinting.png';
 import Lashtingting from '../../src/assests/LashLintings.png';
 import Tatto from '../../src/assests/Tatto.png';
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
 
 function Card() {
     const navigate = useNavigate();
