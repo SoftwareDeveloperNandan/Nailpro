@@ -20,7 +20,7 @@ function Hero() {
                             At NailPro.in, we specialize in crafting nails that leave a lasting impression. Explore our range of premium nail products and expert tips to create stunning, unique designs. Let your nails be a testament to your creativity and style with NailPro.in.
                         </p>
                         <div className='flex justify-center lg:justify-start md:justify-start'>
-                            <button className='btn btn-outline rounded-full' onClick={handleClick}>
+                            <button className='btn btn-outline rounded-full text-slate-800 hover:btn-primary dark:text-white dark:hover:btn-primary' onClick={handleClick}>
                                 Book an Appointment
                             </button>
                         </div>

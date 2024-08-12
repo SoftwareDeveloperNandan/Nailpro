@@ -47,7 +47,7 @@ function Eyelash() {
 
                         <div className='w-full flex items-center gap-3 my-3'>
                             <h1 className='text-2xl font-bold'>₹ 3,000</h1>
-                            <h2 className='text-slate-400 text-xl line-through'>₹ 3,900</h2>
+                            <h2 className='text-slate-400 text-xl line-through'>₹ 4,286</h2>
                             <h3 className='text-green-700 text-xs font-bold'>30% Off</h3>
                         </div>
                         <button className='btn btn-outline rounded-full' onClick={handleClick}>Book an Appointment</button>

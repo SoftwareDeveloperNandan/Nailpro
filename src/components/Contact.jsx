@@ -57,7 +57,7 @@ function Contact() {
                                     className="h-4 w-4 opacity-70">
                                     <path d="M3.654 1.328a1 1 0 0 1 .995.95l.25 3a1 1 0 0 1-.57.944l-1.7.85a13.017 13.017 0 0 0 5.154 5.154l.85-1.7a1 1 0 0 1 .944-.57l3 .25a1 1 0 0 1 .95.995v2.507a1 1 0 0 1-1.106.993C6.383 14.813 1.188 9.617.013 3.76A1 1 0 0 1 1.006 2.655h2.507z" />
                                 </svg>
-                                <p><span className='text-sm font-bold'>022 65075884</span> or <span className='text-sm font-bold'>9076064427</span></p>
+                                <p><span className='text-sm font-bold'>8097924999</span> or <span className='text-sm font-bold'>9076064427</span></p>
 
                             </div>
                             {/* email icon*/}
@@ -85,7 +85,7 @@ function Contact() {
                                     <path
                                         d="M12 2C8.13 2 5 5.13 5 9c0 4.88 6.12 11.74 6.36 12.01a.75.75 0 0 0 1.28 0C12.88 20.74 19 13.88 19 9c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
                                 </svg>
-                                <p className="text-sm">Shop No. 3 & 4, Hortencia, Plot No. 239, Intersection of 2nd & 30th Road, Bandra West, Mumbai - 400050</p>
+                                <p className="text-sm">Shop No. 3 & 4, Hortencia, Plot No. 239, Intersection of 2nd & 30th Road, Bandra West, Mumbai - 400050.</p>
                             </div>
 
                         </div>

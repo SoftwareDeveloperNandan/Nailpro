@@ -46,7 +46,7 @@ function Card() {
                 </div>
                 {/* Alert message */}
                 <div>
-                    <h1 className='text-center font-bold text-xs text-gray-600'>Enjoy 30% off on all premium services. Offer starts now!</h1>
+                    <h1 className='text-center font-bold text-sm text-gray-70000'>Offer valid until August 16th.</h1>
                 </div>
                 <div className='grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 '>
                     <div className="card w-full shadow-xl transform transition-transform duration-300 hover:scale-95 cursor-pointer bg-white text-black dark:bg-inherit dark:text-white" onClick={handleClick}>

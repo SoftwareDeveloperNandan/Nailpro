@@ -35,7 +35,7 @@ function About() {
                         <br />
                         Our working hours are from <span className='font-bold'>11:00 AM to 9:00 PM</span>.
                         <br />
-                        For appointments or inquiries, please contact us at <span className='font-bold'>022 65075884 or 9076064427</span>, or email us at <span className='font-bold'>nailpronbl@gmail.com</span>. Visit our website at <span className='font-bold'>nailpro.in</span> for more information.
+                        For appointments or inquiries, please contact us at <span className='font-bold'>8097924999 or 9076064427</span>, or email us at <span className='font-bold'>nailpronbl@gmail.com</span>. Visit our website at <span className='font-bold'>nailpro.in</span> for more information.
                         We look forward to serving you and making your beauty experience exceptional.</p>
                 </div>
             </div>
